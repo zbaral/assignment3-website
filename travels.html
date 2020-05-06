@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/cookie-icon.png">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="header">
+        <h1>My Travels</h1>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="travels.html">Travels</a>
+            </li>
+            <li>
+                <a href="stress_relief.html">Stress Relief</a>
+            </li>
+            <li>
+                <a href="extra.html">Extra</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        One of my passions includes traveling around the world and visiting new places. Here are just a few photos I have taken from my trips to various countries in Europe.
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="images/europe2.jpg" onclick="openPicture()">
+            <img src="images/europe1.jpg" onclick="openPicture()">
+            <img src="images/europe3.jpg" onclick="openPicture()">
+        </div>
+        <div class="col">
+            <img src="images/europe4.jpg" onclick="openPicture()">
+            <img src="images/europe5.jpg" onclick="openPicture()">
+            <img src="images/europe6.jpg" onclick="openPicture()">
+        </div>
+        <div class="col">
+            <img src="images/europe7.jpg" onclick="openPicture()">
+            <img src="images/europe8.jpg" onclick="openPicture()">
+            <img src="images/europe9.jpg" onclick="openPicture()">
+        </div>
+        <div class="col">
+            <img src="images/europe10.jpg" onclick="openPicture()">
+            <img src="images/europe11.jpg" onclick="openPicture()">
+            <img src="images/europe12.jpg" onclick="openPicture()">
+        </div>
+    </div>
+
+    <div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closePicture">&times;</span>
+        <div class="modal-content">
+            <img src="images/europe2.jpg" onclick="openPicture()">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function openPicture(){
+            document.getElementById('Lightbox').style.display = 'block';
+        }
+        function closePicture(){
+            document.getElementById('Lightbox').style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>
